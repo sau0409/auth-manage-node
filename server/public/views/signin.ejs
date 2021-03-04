@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <section class="secion">
+            <div class="side__section">
+            </div>
+            <div class="form_cont">
+                <form class="form" method="POST" action="http://localhost:3000/auth/login">
+                    <div class="form__data">
+                        <div class="userid__cont">
+                            <label>User ID</label>
+                            <br />
+                            <input class="userId" required name="userId" type="text">
+                        </div>
+                        <div class="userpassword__cont">
+                            <label>Password</label>
+                            <br />
+                            <input class="password" required name="password" type="password">
+                        </div>
+                    </div>
+                    <div class="submit__cont">
+                        <button class="submit__btn" type="submit">LOGIN</button>
+                    </div>
+                </form>
+                <div class="signin-up_link">
+                    <a href="/signup">Do not have Account ? SignUp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        sessionStorage.clear();
+    </script>
+</body>
+
+</html>

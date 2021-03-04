@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <section class="secion">
+            <div class="side__section">
+            </div>
+            <div class="form_cont">
+                <form class="form" method="POST" action="http://localhost:3000/auth/delete">
+                    <div class="form__data">
+                        <div class="userid__cont">
+                            <label>User ID</label>
+                            <br />
+                            <input class="userid" required name="userId" type="text">
+                        </div>
+                        <div class="userpassword__cont">
+                            <label>Password</label>
+                            <br />
+                            <input class="userpassword" required name="password" type="password">
+                        </div>
+                        <div class="repeatuserpassword__cont">
+                            <label>Repeat Password</label>
+                            <br />
+                            <input class="repeatuserpassword" required name="repeatpassword" type="password">
+                        </div>
+                    </div>
+                    <div class="submit__cont">
+                        <button type="submit">DELETE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

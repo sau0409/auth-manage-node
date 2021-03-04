@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__details">
+                <div class="header__logo">
+                    <h1>Auth Manager</h1>
+                </div>
+            </div>
+            <ul>
+                <li><a class="logout" href="#">Logout</a></li>
+                <li><a href="./deleteUser" onclick="deleteToken">Delete User</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <div class="home__banner">
+                    <div class="home__content">
+                        <p class="home__heading">Hi!</p>
+                        <p class="home__text">
+                            Welcome, <%= userId%> to AUTHManager
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="/js/main.js" type="module"></script>
+</body>
+
+</html>

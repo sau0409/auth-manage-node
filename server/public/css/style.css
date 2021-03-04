@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #c5d7bd;
+  --secondary-color: #9fb8ad;
+  --tertioary-color: #383e56;
+  --quadry-color: #fb743e;
+  --dark-gray: #404040;
+  --gray: #808080;
+  --light-gray: #b3b3b3;
+  --lighter-gray: #e6e6e6;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.secion{
+  display: flex;
+}
+
+.side__section {
+  background-image: url('../assets/bcg-1.jpg');
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 70%;
+}
+
+.form_cont {
+  height: auto;
+  width: 30%;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 1px solid var(--light-gray);
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.form__data > div {
+  margin-bottom: 20px;
+}
+
+.form__data div label {
+  margin-bottom: 7px;
+  display: inline-block;
+  color: var(--tertioary-color);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.form__data div input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.2rem;
+  outline: none;
+  border: none;
+  color: var(--dark-gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+
+.submit__cont {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit__cont button {
+    padding: .7rem 1.2rem;
+    border-radius: 3px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: var(--quadry-color);
+    color: #f2f2f2;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px var(--light-gray);
+    font-weight: bold;
+    transition: all 100ms;
+}
+
+.submit__cont button:hover {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.signin-up_link {
+  margin-top: 2rem;
+}
+
+.signin-up_link a {
+  font-weight: 700;
+}
+
+
+/*home*/
+
+.header__nav {
+  max-height: 10vh;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right bottom, rgba(140, 26, 255, 0.8), rgba(89, 0, 179, 0.8));
+  color: #f2f2f2;
+  position: fixed;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header__nav ul li {
+  list-style: none;
+  margin-right: 5vw;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+
+.home__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home__content {
+  max-width: 400px;
+  height: auto;
+}
+
+.home__heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home__text {
+  font-size: 2rem;
+  font-weight: 600;
+}
