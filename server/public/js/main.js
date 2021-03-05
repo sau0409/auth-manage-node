@@ -46,7 +46,7 @@ function initializeEvents() {
 function logout() {
     sessionStorage.removeItem('userData');
 
-    document.location.href = 'http://localhost:3000/signin'
+    document.location.href = '/signin'
 }
 
 
